@@ -1,0 +1,62 @@
+.rooms__room {
+    display: flex;
+    border-radius: 15px;
+}
+
+.rooms__room--medium {
+    border: 4px solid var(--medium-color);
+}
+
+.rooms__desc {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+
+    width: 60%;
+    padding: 3vh 3vw 3vh 3vw;
+}
+
+.rooms__difficulty {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+}
+
+.rooms__difficulty-images > img {
+    width: var(--h4-size);
+    height: auto;
+}
+
+.rooms__enter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 40%;
+
+    background-image:
+        linear-gradient(to right, rgb(0, 0, 0, 1.0), 75%, rgb(0, 0, 0, 0.0)),
+        url('../images/BFA2022/thumbnail.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    border-radius: 15px;
+}
+
+.rooms__enter-button {
+    font-family: 'Anonymous Pro', monospace;
+    font-weight: bold;
+    border-radius: 7px;
+    padding: 15px;
+    color: black;
+}
+
+.rooms__enter-button:hover {
+    color: black;
+    background: var(--medium-dark-color);
+}
+
+.rooms__enter-button--medium {
+    background: var(--medium-color);
+}

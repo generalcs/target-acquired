@@ -10,10 +10,18 @@
     --nav-height: 110px;
 
     --default-transition-time: 0.35s;
+
+    --hard-color: red;
+    --medium-color: #FFC000;
+    --medium-dark-color: #a97f00;
+    --easy-color: var(--accent-color-2);
+
+    --h4-size: 40px;
 }
 
 h1, h2, h3, h4, h5, h6, p, a {
     color: var(--foreground-color);
+    margin: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -25,7 +33,7 @@ h1 {
 }
 
 h2 {
-    font-size: 40px;
+    font-size: var(--h4-size);
 }
 
 h3 {
@@ -43,8 +51,6 @@ h5 {
 p, a {
     font-family: 'Source Sans Pro', sans-serif;
     text-decoration: none;
-
-    margin: 0;
     margin-top: 5px;
 }
 
@@ -63,7 +69,7 @@ nav {
     justify-content: space-around;
     align-items: center;
 
-    max-height: var(--nav-height);
+    height: var(--nav-height);
     background-color: var(--module-color);
 }
 
@@ -120,17 +126,18 @@ main {
     flex-flow: column;
     align-items: center;
     justify-content: flex-start;
+    row-gap: 30px;
 
     background-color: var(--background-color);
     min-height: 100vh;
-    padding: 5vh 10vh 5vh 10vh;
+    padding: 5vh 14vw 5vh 14vw;
 }
 
 footer {
     display: flex;
 
     height: calc(1.5 * var(--nav-height));
-    padding: 5% 15% 5% 15%;
+    padding: 5vh 15vw 5vh 15vw;
 
     background-color: var(--module-color);
 }
@@ -150,4 +157,8 @@ footer {
     justify-content: space-between;
 
     width: 100%;
+}
+
+.medium {
+    color: var(--medium-color);
 }
