@@ -12,10 +12,37 @@
     --default-transition-time: 0.35s;
 }
 
+h1, h2, h3, h4, h5, h6, p, a {
+    color: var(--foreground-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Anonymous Pro', monospace;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+h4 {
+    font-size: 25px;
+}
+
+h5 {
+    font-size: 20px;
+}
+
 p, a {
     font-family: 'Source Sans Pro', sans-serif;
     text-decoration: none;
-    color: var(--foreground-color);
 
     margin: 0;
     margin-top: 5px;
@@ -36,7 +63,7 @@ nav {
     justify-content: space-around;
     align-items: center;
 
-    height: var(--nav-height);
+    max-height: var(--nav-height);
     background-color: var(--module-color);
 }
 
@@ -89,8 +116,14 @@ nav {
 }
 
 main {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: flex-start;
+
     background-color: var(--background-color);
     min-height: 100vh;
+    padding: 5vh 10vh 5vh 10vh;
 }
 
 footer {
