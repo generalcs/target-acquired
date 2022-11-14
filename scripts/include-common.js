@@ -1,11 +1,11 @@
-$.get('/common/head.html', function (head) {
+$.get('/target-acquired/common/head.html', function (head) {
     $('head').append(head);
 });
 
-$.get('/common/nav.html', function (nav) {   
+$.get('/target-acquired/common/nav.html', function (nav) {   
     $('body').prepend(nav);
 });
 
-$.get('/common/footer.html', function(footer) {
+$.get('/target-acquired/common/footer.html', function(footer) {
     $('body').append(footer);
 });
