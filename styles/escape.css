@@ -36,7 +36,7 @@
 
     background-image:
         linear-gradient(to right, rgb(0, 0, 0, 1.0), 75%, rgb(0, 0, 0, 0.0)),
-        url('/target-acquired/images/BFA2022/thumbnail.jpg');
+        url('/images/BFA2022/thumbnail.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

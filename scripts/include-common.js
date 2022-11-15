@@ -1,6 +1,6 @@
 function getTitleLink() {
     const titleLink = document.createElement('a');
-    titleLink.setAttribute('href', '/target-acquired/index.html');
+    titleLink.setAttribute('href', '/index.html');
     titleLink.setAttribute('class', 'nav__title');
 
     const titleT = document.createElement('h1');
@@ -9,7 +9,7 @@ function getTitleLink() {
 
     const titleImg = document.createElement('img');
     titleImg.setAttribute('class', 'nav__title-image');
-    titleImg.setAttribute('src', '/target-acquired/images/hard-target.png');
+    titleImg.setAttribute('src', '/images/hard-target.png');
 
     const titleRest = document.createElement('h1');
     titleRest.setAttribute('class', 'nav__title-text');
@@ -25,7 +25,7 @@ function getTitleLink() {
 function includeCommonHead() {
     const generalStyle = document.createElement('link');
     generalStyle.setAttribute('rel', 'stylesheet');
-    generalStyle.setAttribute('href', '/target-acquired/styles/general.css');
+    generalStyle.setAttribute('href', '/styles/general.css');
 
     const fontGoogleApi = document.createElement('link');
     fontGoogleApi.setAttribute('rel', 'preconnect');
@@ -42,7 +42,7 @@ function includeCommonHead() {
     const favicon = document.createElement('link');
     favicon.setAttribute('rel', 'icon');
     favicon.setAttribute('type', 'image/x-icon');
-    favicon.setAttribute('href', '/target-acquired/images/hard-target.png');
+    favicon.setAttribute('href', '/images/hard-target.png');
 
     const head = document.getElementsByTagName('head').item(0)
     head.appendChild(generalStyle);
@@ -59,11 +59,11 @@ function includeCommonNav() {
     navLinks.setAttribute('class', 'nav__links');
     
     const escapeLink = document.createElement('a');
-    escapeLink.setAttribute('href', '/target-acquired/escape.html');
+    escapeLink.setAttribute('href', '/escape.html');
     escapeLink.appendChild(document.createTextNode('Escape'));
 
     const teamsLink = document.createElement('a');
-    teamsLink.setAttribute('href', '/target-acquired/teams.html');
+    teamsLink.setAttribute('href', '/teams.html');
     teamsLink.appendChild(document.createTextNode('Teams'));
 
     navLinks.appendChild(escapeLink);
@@ -76,11 +76,11 @@ function includeCommonNav() {
     navLinks2.setAttribute('class', 'nav__links');
 
     const rankingsLink = document.createElement('a');
-    rankingsLink.setAttribute('href', '/target-acquired/rankings.html');
+    rankingsLink.setAttribute('href', '/rankings.html');
     rankingsLink.appendChild(document.createTextNode('Rankings'));
 
     const solutionsLink = document.createElement('a');
-    solutionsLink.setAttribute('href', '/target-acquired/solutions.html');
+    solutionsLink.setAttribute('href', '/solutions.html');
     solutionsLink.appendChild(document.createTextNode('Solutions'));
 
     navLinks2.appendChild(rankingsLink);
@@ -142,7 +142,7 @@ function includeCommonFooter() {
     roomsTitle.appendChild(roomsTitleBold);
 
     const roomsBFA2022 = document.createElement('a');
-    roomsBFA2022.setAttribute('href', '/target-acquired/rooms/BFA2022/start.html');
+    roomsBFA2022.setAttribute('href', '/rooms/BFA2022/start.html');
     roomsBFA2022.appendChild(document.createTextNode('CS106B Fall 2022'));
 
     rooms.appendChild(roomsTitle);
