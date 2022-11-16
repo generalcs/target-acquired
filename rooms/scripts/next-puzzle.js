@@ -31,9 +31,9 @@ function reactToAnswer(answer, prefix) {
     if (status == OK) {
         window.location.href = url;
     } else if (status == NOT_FOUND) {
-        document.getElementById('error').innerText('Incorrect answer!');
+        document.getElementById('error').innerHTML = 'Incorrect code.';
     } else {
-        document.getElementById('error').innerText('Error: please try again');
+        document.getElementById('error').innerHTML ='Error: please try again';
     }
 }
 

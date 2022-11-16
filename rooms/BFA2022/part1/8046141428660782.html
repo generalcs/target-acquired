@@ -13,9 +13,12 @@
         <main>
             <div class="puzzle">
                 <h1>Crack the Bank Safe</h1>
-                <div class="answer-mod">
-                    <input id="answer" type="text" id="answer" name="answer">
-                    <a class="button button--medium" onclick="checkAnswer('/rooms/BFA2022/part2/')">Check Answer</a>
+                <div class="submit-mod">
+                    <div class="answer-mod">
+                        <input id="answer" type="text" id="answer" name="answer" placeholder="Code">
+                        <a class="button button--medium" onclick="checkAnswer('/rooms/BFA2022/part2/')">Submit Code</a>
+                    </div>
+                    <p id="error"> </p>
                 </div>
             </div>
         </main>

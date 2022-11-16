@@ -5,7 +5,8 @@
         <script src="/scripts/include-common.js"></script>
         <script>includeCommonHead()</script>
         <link rel="stylesheet" href="/styles/escape.css">
-        <link rel="stylesheet" href="styles/start.css">
+        <link rel="stylesheet" href="/rooms/BFA2022/styles/start.css">
+        <link rel="stylesheet" href="/rooms/styles/puzzle.css">
         <script src="/rooms/scripts/next-puzzle.js"></script>
     </head>
     <body>
@@ -70,7 +71,13 @@
                 </div>
             </div>
             <h4>When you enter, the timer will begin.</h4>
-            <a class="button button--medium" onclick="reactToAnswer('bfa2022', '/rooms/BFA2022/part1/');">Enter room</a>
+            <div class="submit-mod">
+                <div class="answer-mod">
+                    <input id="answer" type="text" id="answer" name="answer" placeholder="Entry Code">
+                    <a class="button button--medium" onclick="checkAnswer('/rooms/BFA2022/part1/')">Enter Room</a>
+                </div>
+                <p id="error"> </p>
+            </div>
         </main>
         <script>includeCommonFooter()</script>
     </body>
