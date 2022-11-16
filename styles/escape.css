@@ -59,6 +59,7 @@
 .rooms__enter-button:hover {
     color: black;
     background: var(--medium-dark-color);
+    cursor: pointer;
 }
 
 .rooms__enter-button--medium {

@@ -6,6 +6,7 @@
         <script>includeCommonHead()</script>
         <link rel="stylesheet" href="/styles/escape.css">
         <link rel="stylesheet" href="styles/start.css">
+        <script src="/rooms/scripts/next-puzzle.js"></script>
     </head>
     <body>
         <script>includeCommonNav()</script>
@@ -38,10 +39,6 @@
                                 <h4>Increasing difficulty</h4>
                             </span>
                             <span>
-                                <img src="/rooms/images/route-icons/coding-required.png">
-                                <h4>Coding required</h4>
-                            </span>
-                            <span>
                                 <img src="/rooms/images/route-icons/algorithmic-thinking.png">
                                 <h4>Algorithmic Thinking</h4>
                             </span>
@@ -49,21 +46,31 @@
                                 <img src="/rooms/images/route-icons/lateral-thinking.png">
                                 <h4>Lateral Thinking</h4>
                             </span>
+                            <span>
+                                <img src="/rooms/images/route-icons/coding-required.png">
+                                <h4>Coding required</h4>
+                            </span>
                         </div>
                     </div>
                 </div>
                 <div class="rooms__instructions">
                     <h2>Instructions</h2>
-                    <ol>
-                        <li>Each part will give you a puzzle that leads to a code. Use the code in the answer box to proceed.</li>
-                        <li>No link: Use the answer to the puzzle as the code.</li>
-                        <li>Virtual world link: Use the answer to the puzzle to find the code online.</li>
-                        <li>Physical world link: Use the answer to the puzzle to find the code in the real-world room.</li>
-                    </ol>
+                    <p>Each part will give you a puzzle that leads to a code. Use the code in the answer box to proceed.</p>
+                    <div class="rooms__instruction-item">
+                        <p>No link: Use the answer to the puzzle as the code.</p>
+                    </div>
+                    <div class="rooms__instruction-item">
+                        <img src="/rooms/images/virtual-link.png">
+                        <p>Virtual world link: Use the answer to the puzzle to find the code online.</p>
+                    </div>
+                    <div class="rooms__instruction-item">
+                        <img src="/rooms/images/physical-link.png">
+                        <p>Physical world link: Use the answer to the puzzle to find the code in the real-world room.</p>
+                    </div>
                 </div>
             </div>
             <h4>When you enter, the timer will begin.</h4>
-            <a class="rooms__enter-button rooms__enter-button--medium">Enter room</a>
+            <a class="rooms__enter-button rooms__enter-button--medium" onclick="getAnswerStatus('BFA2022', '/rooms/BFA2022/');">Enter room</a>
         </main>
         <script>includeCommonFooter()</script>
     </body>
