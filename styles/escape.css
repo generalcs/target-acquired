@@ -40,28 +40,10 @@
 
     background-image:
         linear-gradient(to right, rgb(0, 0, 0, 1.0), 75%, rgb(0, 0, 0, 0.0)),
-        url('/images/BFA2022/thumbnail.jpg');
+        url('/rooms/BFA2022/images/thumbnail.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 
     border-radius: 15px;
-}
-
-.rooms__enter-button {
-    font-family: 'Anonymous Pro', monospace;
-    font-weight: bold;
-    border-radius: 7px;
-    padding: 15px;
-    color: black;
-}
-
-.rooms__enter-button:hover {
-    color: black;
-    background: var(--medium-dark-color);
-    cursor: pointer;
-}
-
-.rooms__enter-button--medium {
-    background: var(--medium-color);
 }

@@ -8,8 +8,8 @@
     margin-bottom: 50px;
 
     background-image:
-    linear-gradient(rgb(0, 0, 0, 0.8), rgb(0, 0, 0, 0.8)),
-    url('/images/BFA2022/thumbnail.jpg');
+    linear-gradient(rgb(0, 0, 0, 0.75), rgb(0, 0, 0, 0.75)),
+    url('/rooms/BFA2022/images/thumbnail.jpg');
     background-position: center;
     background-size: cover;
 }

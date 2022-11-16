@@ -48,7 +48,7 @@ h5 {
     font-size: 20px;
 }
 
-p, a, ol, ul{
+p, a, ol, ul, input {
     font-family: 'Source Sans Pro', sans-serif;
     text-decoration: none;
     margin-top: 5px;
@@ -161,4 +161,27 @@ footer {
 
 .medium {
     color: var(--medium-color);
+}
+
+input {
+    border-radius: 7px;
+    padding: 15px;
+}
+
+.button {
+    font-family: 'Anonymous Pro', monospace;
+    font-weight: bold;
+    border-radius: 7px;
+    padding: 15px;
+    color: black;
+}
+
+.button--medium {
+    background: var(--medium-color);
+}
+
+.button--medium:hover {
+    color: black;
+    background: var(--medium-dark-color);
+    cursor: pointer;
 }

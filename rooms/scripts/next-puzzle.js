@@ -5,7 +5,7 @@ function getUrlStatus(url) {
     var xmlHttp = new XMLHttpRequest();
     xmlHttp.open('GET', url, false);
     xmlHttp.send(null);
-    return xmlHttp.status
+    return xmlHttp.status;
 }
 
 function getHash(str, seed = 0) {
@@ -23,16 +23,21 @@ function getHash(str, seed = 0) {
     return 4294967296 * (2097151 & h2) + (h1 >>> 0);
 }
 
-function getAnswerStatus(answer, prefix) {
-    let hash = getHash(answer);
-    let url = prefix + String(hash) + '.html';
+function reactToAnswer(answer, prefix) {
+    let hash = getHash(answer.toLowerCase());
+    let url = (prefix + String(hash) + '.html');
     let status = getUrlStatus(url);
 
     if (status == OK) {
         window.location.href = url;
     } else if (status == NOT_FOUND) {
-        return 'Incorrect answer!';
+        document.getElementById('error').innerText('Incorrect answer!');
     } else {
-        return 'Error: please try again.'
+        document.getElementById('error').innerText('Error: please try again');
     }
+}
+
+function checkAnswer(prefix) {
+    let answer = document.getElementById('answer').value;
+    reactToAnswer(answer, prefix);
 }
