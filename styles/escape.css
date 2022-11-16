@@ -1,3 +1,7 @@
+.rooms {
+    width: 100%;
+}
+
 .rooms__room {
     display: flex;
     border-radius: 15px;

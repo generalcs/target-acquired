@@ -104,16 +104,11 @@ function includeCommonFooter() {
 
     const icons8p = document.createElement('p');
 
-    const icons8ImageLink = document.createElement('a');
-    icons8ImageLink.setAttribute('href', 'https://icons8.com/icon/55349/accuracy');
-    icons8ImageLink.appendChild(document.createTextNode('Accuracy'));
-
     const icons8WebsiteLink = document.createElement('a');
     icons8WebsiteLink.setAttribute('href', 'https://icons8.com');
     icons8WebsiteLink.appendChild(document.createTextNode('Icons8'));
 
-    icons8p.appendChild(icons8ImageLink);
-    icons8p.appendChild(document.createTextNode(' icon by '));
+    icons8p.appendChild(document.createTextNode('Icons by '));
     icons8p.appendChild(icons8WebsiteLink);
 
     const copyright = document.createElement('p');

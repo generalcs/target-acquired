@@ -19,7 +19,7 @@
     --h4-size: 40px;
 }
 
-h1, h2, h3, h4, h5, h6, p, a {
+h1, h2, h3, h4, h5, h6, p, a, ol, ul {
     color: var(--foreground-color);
     margin: 0;
 }
@@ -48,7 +48,7 @@ h5 {
     font-size: 20px;
 }
 
-p, a {
+p, a, ol, ul{
     font-family: 'Source Sans Pro', sans-serif;
     text-decoration: none;
     margin-top: 5px;

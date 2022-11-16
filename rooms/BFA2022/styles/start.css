@@ -1,0 +1,44 @@
+.rooms__outline {
+    display: flex;
+}
+
+.rooms__room {
+    flex-direction: column;
+
+    margin-bottom: 50px;
+
+    background-image:
+    linear-gradient(rgb(0, 0, 0, 0.8), rgb(0, 0, 0, 0.8)),
+    url('/images/BFA2022/thumbnail.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.rooms__outline-route {
+    display: flex;
+    flex-direction: column;
+
+    width: 40%;
+    padding: 3vh 3vw 3vh 3vw;
+
+    border-left: 4px solid var(--medium-color);
+}
+
+.rooms__outline-route-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    height: 100%;
+}
+
+.rooms__outline-route-list > span {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+}
+
+.rooms__instructions {
+    padding: 3vh 3vw 3vh 3vw;
+    border-top: 4px solid var(--medium-color);
+}
