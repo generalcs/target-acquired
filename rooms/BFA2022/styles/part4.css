@@ -3,3 +3,19 @@ main {
     background-position: center;
     background-size: cover;
 }
+
+#objective {
+    background-image: url('/rooms/BFA2022/images/self-destruct.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.button {
+    background-color: red;
+    color: white;
+}
+
+.button:hover {
+    background-color: darkred;
+    color: white;
+}

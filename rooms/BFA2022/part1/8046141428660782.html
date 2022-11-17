@@ -12,11 +12,22 @@
         <script>includeCommonNav()</script>
         <main>
             <div class="puzzle">
-                <h1>Crack the Bank Safe</h1>
+                <h1>Cracking the Bank Safe</h1>
+                <div>
+                    <p>&emsp;The attackers were able to break into key nodes without authorized access, but they already prepared to cause a breach of this magnitude. On the other hand, you have little time and your contractor only gives you access to traffic statistics and scanners. You need another way to get direct access to the network - through the physical bank system. The bank across the street happens to be one of the 5 national bank chains.</p>
+                    <p>&emsp;You rush over to the front desk of the bank, and speak to the receptionist about the dire situation. Fortunately, they authenticate you for the bank’s info vault, giving you the code ‘x4a32fiq0’ for the safe. Unfortunately, the vault wheel doesn’t turn smoothly and the code fails multiple attempts. The mechanism behind the wheel is software-based and has a fatal bug at the moment. Your team loads the source code for the wheel into an investigation environment and begin debugging. You anticipate that once the issue has been removed, you can get into the safe to obtain the network login info.</p>
+                </div>
+                <div id="objective">
+                    <h3 id="objective-text">Objective: Get the vault wheel to turn.</h3>
+                </div>
+                <div id="sources">
+                    <h2>Sources</h2>
+                    <a href="/rooms/BFA2022/VaultInvestigation.zip">main.cpp in the Vault Investigation Environment</a>
+                </div>
                 <div class="submit-mod">
                     <div class="answer-mod">
                         <input id="answer" type="text" id="answer" name="answer" placeholder="Code">
-                        <a class="button button--medium" onclick="checkAnswer('/rooms/BFA2022/part2/')">Submit Code</a>
+                        <a class="button button--medium" onclick="checkAnswer('/rooms/BFA2022/part2/')">Login</a>
                     </div>
                     <p id="error"> </p>
                 </div>

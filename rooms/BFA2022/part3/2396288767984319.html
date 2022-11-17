@@ -12,7 +12,18 @@
         <script>includeCommonNav()</script>
         <main>
             <div class="puzzle">
-                <h1>Disassemble the Connection Stack</h1>
+                <h1>Disassembling the Connection Stack</h1>
+                <div>
+                    <p>&emsp;Time is ticking. Only half an hour left before the hackers get admin privileges. You have a list of all the breached nodes, but you now need to shut down those nodes remotely from your connection. However, your signal is suddenly interrupted as the network floods with useless packets. They sensed your presence by probing network communication, and your team is prevented from communicating with any node without filtering out the cacophony.</p>
+                    <p>&emsp;From what one of your teammates can tell, the useless packets contain characters within the range of ASCII 100 and 109. Filtering these packets will help establish a stable connection between you and every node in the network. You don’t have much time left, but this is the only way to regain access within the system.</p>
+                </div>
+                <div id="objective">
+                    <h3 id="objective-text">Objective: Eliminate malicious network noise.</h3>
+                </div>
+                <div id="sources">
+                    <h2>Sources</h2>
+                    <a href="/rooms/BFA2022/StackInvestigation.zip">main.cpp in Stack Investigation Environment</a>
+                </div>
                 <div class="submit-mod">
                     <div class="answer-mod">
                         <input id="answer" type="text" id="answer" name="answer" placeholder="Code">

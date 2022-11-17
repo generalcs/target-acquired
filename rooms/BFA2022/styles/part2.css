@@ -3,3 +3,9 @@ main {
     background-position: center;
     background-size: cover;
 }
+
+#objective {
+    background-image: url('/rooms/BFA2022/images/nodes.jpg');
+    background-position: center;
+    background-size: cover;
+}

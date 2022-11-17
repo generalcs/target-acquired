@@ -13,10 +13,28 @@
         <main>
             <div class="puzzle">
                 <h1>Initiate Self-Destruct</h1>
+                <div>
+                    <p>&emsp;All nodes are secured and communicating again. The attackers are oblivious to your filtering strategy, giving you freedom to initiate your own attack. Every node has equipment in the physical world for a self-destruct sequence: backup to a secure secondary storage and then a wipe of the primary system. Since you know every node that is breached, you can destroy these nodes to eliminate the hackers from the network. But it’s not so easy to start such a destructive process.</p>
+                    <p>&emsp;The paper containing the login info at the bank vault also contained an encrypted code. This has to be the self-destruct code; with the time that your team has left, it might as well be. You ping the current node for help on the self-destruct command and it gives you three steps for decrypting a code:</p>
+                    <ol>
+                        <li>Split nodes into odd-node and even-node lists. The first node is considered an odd node. Append the odd-node list to the even-node list.</li>
+                        <li>Reverse the list from step (1).</li>
+                        <li>Remove every other node from the list from step (2). The first node is not removed.</li>
+                    </ol>
+                </div>
+                <div id="objective">
+                    <h3 id="objective-text">Objective: Wipe all breached nodes.</h3>
+                </div>
+                <div id="sources">
+                    <h3>Sources</h3>
+                    <a href="/rooms/BFA2022/DestructInvestigation.zip">main.cpp in Destruct Investigation Environment</a>
+                </div>
                 <div class="submit-mod">
                     <div class="answer-mod">
+                        <img src="/rooms/images/physical-link.png">
+                        <img src="/rooms/images/virtual-link.png">
                         <input id="answer" type="text" id="answer" name="answer" placeholder="Code">
-                        <a class="button button--medium" onclick="checkAnswer('/rooms/BFA2022/success/')">Submit Code</a>
+                        <a class="button button--medium" onclick="checkAnswer('/rooms/BFA2022/success/')">SELF DESTRUCT</a>
                     </div>
                     <p id="error"> </p>
                 </div>

@@ -4,6 +4,7 @@
 
 .rooms__room {
     flex-direction: column;
+    width: 75vw;
 
     margin-bottom: 50px;
 

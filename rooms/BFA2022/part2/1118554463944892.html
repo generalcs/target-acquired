@@ -12,9 +12,21 @@
         <script>includeCommonNav()</script>
         <main>
             <div class="puzzle">
-                <h1>Infiltrate the Network</h1>
+                <h1>Infiltrating the Network</h1>
+                <div>
+                    <p>&emsp;With a successful login to the network, your team buckles down to go digital. You can see all non-admin nodes of the network by using a custom ping command on your terminal; details like the node name and transmission function appear instantly. Specifically, the transmission function collects data about traffic going through the node before sending it where it needs to be.</p>
+                    <p>&emsp;The first node that you access seems suspicious. The source code for the transmission function changes the ORIGINAL data, rather than monitoring the data. This should never happen for security reasons - the hackers changed the transmission functions so that they could impersonate as nodes on the network. Finding the names of all the nodes that modify original data will allow you to build a map to track the attackers.</p>
+                </div>
+                <div id="objective">
+                    <h3 id="objective-text">Objective: Collect the names of breached nodes.</h3>
+                </div>
+                <div id="sources">
+                    <h2>Sources</h2>
+                    <a href="/rooms/BFA2022/NetworkInvestigation.zip">main.cpp in Network Investigation Environment</a>
+                </div>
                 <div class="submit-mod">
                     <div class="answer-mod">
+                        <img src="/rooms/images/virtual-link.png">
                         <input id="answer" type="text" id="answer" name="answer" placeholder="Code">
                         <a class="button button--medium" onclick="checkAnswer('/rooms/BFA2022/part3/')">Submit Code</a>
                     </div>
