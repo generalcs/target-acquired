@@ -7,12 +7,15 @@
     width: 75vw;
 
     margin-bottom: 50px;
+}
 
+.rooms__desc {
     background-image:
     linear-gradient(rgb(0, 0, 0, 0.75), rgb(0, 0, 0, 0.75)),
     url('/rooms/BFA2022/images/thumbnail.jpg');
     background-position: center;
     background-size: cover;
+    border-radius: 15px;
 }
 
 .rooms__outline-route {
