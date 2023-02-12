@@ -112,7 +112,7 @@ function includeCommonFooter() {
     icons8p.appendChild(icons8WebsiteLink);
 
     const copyright = document.createElement('p');
-    copyright.appendChild(document.createTextNode('Copyright © 2022 Samuel Do. All Rights Reserved.'));
+    copyright.appendChild(document.createTextNode('Copyright © 2022-2023 Samuel Do. All Rights Reserved.'));
 
     footnotes.append(icons8p);
     footnotes.append(copyright);
