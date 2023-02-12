@@ -138,7 +138,7 @@ function includeCommonFooter() {
 
     const roomsBFA2022 = document.createElement('a');
     roomsBFA2022.setAttribute('href', '/rooms/BFA2022/start.html');
-    roomsBFA2022.appendChild(document.createTextNode('CS106B Fall 2022'));
+    roomsBFA2022.appendChild(document.createTextNode('Bank Heist'));
 
     rooms.appendChild(roomsTitle);
     rooms.append(roomsBFA2022); 

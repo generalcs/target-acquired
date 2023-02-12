@@ -6,30 +6,33 @@
         <script>includeCommonHead()</script>
         <link rel="stylesheet" href="/styles/escape.css">
         <link rel="stylesheet" href="/rooms/BFA2022/styles/start.css">
+        <link rel="stylesheet" href="/rooms/styles/escape-start.css">
         <link rel="stylesheet" href="/rooms/styles/puzzle.css">
         <script src="/rooms/scripts/next-puzzle.js"></script>
     </head>
     <body>
         <script>includeCommonNav()</script>
         <main>
-            <div class="rooms__room rooms__room--medium">
+            <div class="rooms__room rooms__room--hard">
                 <div class="rooms__outline">
                     <div class="rooms__desc">
-                        <h2>CS106B Fall 2022</h2>
+                        <h2>Bank Heist</h2>
                         <div class="rooms__difficulty">
-                            <h4>Difficulty: <span class="medium">Medium</span></h4>
+                            <h4>Difficulty: <span class="hard">Hard</span></h4>
                             <div class="rooms__difficulty-images">
-                                <img src="/images/medium-target.png">
-                                <img src="/images/medium-target.png">
-                                <img src="/images/medium-target.png">
+                                <img src="/images/hard-target.png">
+                                <img src="/images/hard-target.png">
+                                <img src="/images/hard-target.png">
+                                <img src="/images/hard-target.png">
+                                <img src="/images/hard-target.png">
                             </div>
                         </div>
-                        <h4>Topic: Linked Lists</h4>
+                        <h4>CS106B Fall 22-23 | Linked Lists</h4>
                         <p>You work for a cybersecurity agency that intercepts digital attacks across the country. Recently, a company that installed a private computer network has contacted your agency to monitor access to the system. The network contains key nodes, which given the right password, can grant admin permissions. You and a group of three co-workers have been assigned to scan for unusual traffic.</p>
                         <p>Upon arriving to your office in New York City, you notice a warning bar flashing on your work computer. Your partners turn to glance at your screen, briefly nod, and turn again to face their own screens. With as many false alarms as there have been in the past couple of months, you take your time grabbing snacks from the office micro kitchen before sitting down. However, once seated, you instantly realize that you’ve never seen any warning message like this before - “UNKNOWN ACCESS to Node ID: BA2F4”. Thousands of UNKNOWN ACCESS warnings flood the display when you click into the message.</p>
                         <p>Hackers have breached the network, but they haven’t cracked admin permissions yet. You gather your co-workers and create an action plan at blazing speed. Your team estimates that the hackers will succeed within an hour, but eliminating unauthorized access could take longer. And quite unfortunately, it happens that this network manages 5 major bank chains across the nation. With admin access, the hackers can do whatever they wish with each bank’s records and transactions. Can you eliminate them before the U.S. economy collapses?</p>
                     </div>
-                    <div class="rooms__outline-route">
+                    <div class="rooms__outline-route rooms__outline-route--hard">
                         <h2>Escape Route</h2>
                         <div class="rooms__outline-route-list">
                             <span>
@@ -55,7 +58,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="rooms__instructions">
+                <div class="rooms__instructions rooms__instructions--hard">
                     <h2>Instructions</h2>
                     <p>Each part will give you a puzzle that leads to a code. Use the code in the answer box to proceed.</p>
                     <div class="rooms__instruction-item">
@@ -69,15 +72,18 @@
                         <img src="/rooms/images/physical-link.png"> 
                         <p>Physical world link: Use the answer to the puzzle to find the code in the real-world room.</p>
                     </div>
+
+                    <div class="rooms__enter">
+                        <h4>When you enter, the timer will begin.</h4>
+                        <div class="submit-mod">
+                            <div class="answer-mod">
+                                <input id="answer" type="text" id="answer" name="answer" placeholder="Entry Code">
+                                <a class="button button--hard" onclick="checkAnswer('/rooms/BFA2022/part1/')">Enter Room</a>
+                            </div>
+                            <p id="error"> </p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <h4>When you enter, the timer will begin.</h4>
-            <div class="submit-mod">
-                <div class="answer-mod">
-                    <input id="answer" type="text" id="answer" name="answer" placeholder="Entry Code">
-                    <a class="button button--medium" onclick="checkAnswer('/rooms/BFA2022/part1/')">Enter Room</a>
-                </div>
-                <p id="error"> </p>
             </div>
         </main>
         <script>includeCommonFooter()</script>

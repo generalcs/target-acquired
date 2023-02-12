@@ -1,7 +1,4 @@
 :root {
-    --foreground-color: white;
-    --background-color: black;
-
     --module-color: rgb(27, 27, 27);
     --accent-color: red;
     --accent-color-2: rgb(35, 255, 35);
@@ -11,10 +8,24 @@
 
     --default-transition-time: 0.35s;
 
+    /* Colors */
+    --foreground-color: white;
+    --background-color: black;
+
     --hard-color: red;
+    --hard-dark-color: rgb(188, 0, 0);
+
     --medium-color: #FFC000;
     --medium-dark-color: #a97f00;
+
     --easy-color: var(--accent-color-2);
+
+    --translucent-black: rgb(0, 0, 0, 0.75);
+
+    /* Dimensions */
+    --border-radius-large: 15px;
+    --border-radius-medium: 11px;
+    --border-radius-small: 7px;
 
     --h4-size: 40px;
 }
@@ -163,15 +174,19 @@ footer {
     color: var(--medium-color);
 }
 
+.hard {
+    color: var(--hard-color);
+}
+
 input {
-    border-radius: 7px;
+    border-radius: var(--border-radius-small);
     padding: 15px;
 }
 
 .button {
     font-family: 'Anonymous Pro', monospace;
     font-weight: bold;
-    border-radius: 7px;
+    border-radius: var(--border-radius-small);
     padding: 15px;
     color: black;
 }
@@ -180,8 +195,18 @@ input {
     background: var(--medium-color);
 }
 
+.button--hard {
+    background: var(--hard-color);
+}
+
 .button--medium:hover {
     color: black;
     background: var(--medium-dark-color);
+    cursor: pointer;
+}
+
+.button--hard:hover {
+    color: black;
+    background: var(--hard-dark-color);
     cursor: pointer;
 }

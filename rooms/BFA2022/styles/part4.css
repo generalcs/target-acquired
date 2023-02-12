@@ -11,11 +11,9 @@ main {
 }
 
 .button {
-    background-color: red;
     color: white;
 }
 
 .button:hover {
-    background-color: darkred;
     color: white;
 }

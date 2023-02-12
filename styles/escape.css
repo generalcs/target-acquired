@@ -11,6 +11,10 @@
     border: 4px solid var(--medium-color);
 }
 
+.rooms__room--hard {
+    border: 4px solid var(--hard-color);
+}
+
 .rooms__desc {
     display: flex;
     flex-direction: column;
@@ -31,7 +35,7 @@
     height: auto;
 }
 
-.rooms__enter {
+.rooms__select {
     display: flex;
     align-items: center;
     justify-content: center;
