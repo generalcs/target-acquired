@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>Escape Plan - Space Cows</title>
+        <script src="/scripts/include-common.js"></script>
+        <script>includeCommonHead()</script>
+        <link rel="stylesheet" href="/rooms/styles/puzzle.css">
+        <link rel="stylesheet" href="/rooms/BWI2022/styles/part1.css">
+        <script src="/rooms/scripts/next-puzzle.js"></script>
+    </head>
+    <body>
+        <script>includeCommonNav()</script>
+        <main>
+            <div class="puzzle">
+                <h1>Escape Plan</h1>
+                <div>
+                    <p>&emsp;Before releasing the cows, you need to figure out the path you would rally them on. On the surface of the moon, there are safe international bases A, B, C, D, E, and F that you can travel to and from. However, if you take a predictable path, Jim would likely be able to catch you and the cows before everyone gets to safety. He has many farm patrols that weave through the moon bases in order to guard against spies.</p>
+                    <p>&emsp;You will attempt to devise a novel path to avoid being captured. By recursively generating all permutations of the bases listed above in lexicographic order, you can pick a path that has a low likelihood of interception. In particular, this path will have the median index in the generated list - you can use integer division i.e. flooring to get the middle path. Hurry!</p>
+                </div>
+                <div id="objective">
+                    <h3 id="objective-text">Objective: Find a novel escape path.</h3>
+                </div>
+                <div class="submit-mod">
+                    <div class="answer-mod">
+                        <input id="answer" type="text" id="answer" name="answer" placeholder="Code">
+                        <a class="button button--medium" onclick="checkAnswer('/rooms/BWI2022/part2/')">Draw Path</a>
+                    </div>
+                    <p id="error"> </p>
+                </div>
+            </div>
+        </main>
+        <script>includeCommonFooter()</script>
+    </body>
+</html>

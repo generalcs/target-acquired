@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>Space Cows</title>
+        <script src="/scripts/include-common.js"></script>
+        <script>includeCommonHead()</script>
+        <link rel="stylesheet" href="/styles/escape.css">
+        <link rel="stylesheet" href="/rooms/BWI2022/styles/start.css">
+        <link rel="stylesheet" href="/rooms/styles/escape-start.css">
+        <link rel="stylesheet" href="/rooms/styles/puzzle.css">
+        <script src="/rooms/scripts/next-puzzle.js"></script>
+    </head>
+    <body>
+        <script>includeCommonNav()</script>
+        <main>
+            <div class="rooms__room rooms__room--medium">
+                <div class="rooms__outline">
+                    <div class="rooms__desc">
+                        <h2>Space Cows</h2>
+                        <div class="rooms__difficulty">
+                            <h4>Difficulty: <span class="medium">Medium</span></h4>
+                            <div class="rooms__difficulty-images">
+                                <img src="/images/medium-target.png">
+                                <img src="/images/medium-target.png">
+                                <img src="/images/medium-target.png">
+                            </div>
+                        </div>
+                        <h4>CS106B Winter 22-23 | Cumulative</h4>
+                        <p>In the year 2105, Jim the farmer claimed a substantial plot of land on the moon by deploying a special probe - one that automatically expands into a deluxe farming suite on the surface of any planet. Unfortunately, he began shipping cows from Earth to his plot of land, which was disallowed by a treaty published by the Convention Of Worlds (COW) in 2078. At this time, all farm animals on Earth are closely monitored by humane societies, but they do not have the capacity to add additional monitoring on the moon. Your job, as a spy on the reconnaissance mission for COW, is to sneak around the farmer’s base and record potential weak points. If you are successful, you will also deliver intel on the whereabouts and the status of the shipped cows. The farmer has strategically deployed motion-sensor turrets around the plot, so you must be prudent in your spy route.</p>
+                        <p>Your stealth spacecraft reaches the moon and lands silently beside the base. With the new camouflage technology, you are undetected by the farmer’s security system. The cows! Shockingly, you can see the cows’ quarters through windows around the building. They are caged and hooked up to suspicious tubes of fluid - all while being constantly milked. The cow nearest to the window turns to you with soft eyes, and it turns back again with udder resignation. Screw the recon mission; you need to save these poor cuties. Draw out an escape plan, hijack the cows’ quarters, and free them from the farm!</p>
+                    </div>
+                    <div class="rooms__outline-route rooms__outline-route--medium">
+                        <h2>Escape Route</h2>
+                        <div class="rooms__outline-route-list">
+                            <span>
+                                <img src="/rooms/images/route-icons/teams.png">
+                                <h4>Teams of 2 to 3</h4>
+                            </span>
+                            <span>
+                                <img src="/rooms/images/route-icons/stable-difficulty.png">
+                                <h4>Stable Difficulty</h4>
+                            </span>
+                            <span>
+                                <img src="/rooms/images/route-icons/algorithmic-thinking.png">
+                                <h4>Algorithmic thinking</h4>
+                            </span>
+                            <span>
+                                <img src="/rooms/images/route-icons/coding-required.png">
+                                <h4>Coding required</h4>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="rooms__instructions rooms__instructions--medium">
+                    <h2>Instructions</h2>
+                    <p>Each part will give you a puzzle that leads to a code. Use the code in the answer box to proceed.</p>
+                    <div class="rooms__instruction-item">
+                        <p>No link: Use the answer to the puzzle as the code.</p>
+                    </div>
+                    <div class="rooms__instruction-item">
+                        <img src="/rooms/images/virtual-link.png">
+                        <p>Virtual world link: Use the answer to the puzzle to find the code online.</p>
+                    </div>
+                    <div class="rooms__instruction-item">
+                        <img src="/rooms/images/physical-link.png"> 
+                        <p>Physical world link: Use the answer to the puzzle to find the code in the real-world room.</p>
+                    </div>
+
+                    <div class="rooms__enter">
+                        <h4>When you enter, the timer will begin.</h4>
+                        <div class="submit-mod">
+                            <div class="answer-mod">
+                                <input id="answer" type="text" id="answer" name="answer" placeholder="Entry Code">
+                                <a class="button button--medium" onclick="checkAnswer('/rooms/BWI2022/part1/')">Enter Room</a>
+                            </div>
+                            <p id="error"> </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script>includeCommonFooter()</script>
+    </body>
+</html>

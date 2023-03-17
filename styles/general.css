@@ -170,6 +170,12 @@ footer {
     width: 100%;
 }
 
+.footer__links-section {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+}
+
 .medium {
     color: var(--medium-color);
 }

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>Hijack - Space Cows</title>
+        <script src="/scripts/include-common.js"></script>
+        <script>includeCommonHead()</script>
+        <link rel="stylesheet" href="/rooms/styles/puzzle.css">
+        <link rel="stylesheet" href="/rooms/BWI2022/styles/part2.css">
+        <script src="/rooms/scripts/next-puzzle.js"></script>
+    </head>
+    <body>
+        <script>includeCommonNav()</script>
+        <main>
+            <div class="puzzle">
+                <h1>Hijack the Cows' Quarters</h1>
+                <div>
+                    <p>&emsp;The escape path has been set. Now it’s time to release the cows from their iron cages. You exit your spacecraft cautiously and peer through the window to get a better look. The cages of the cows are controlled by a common gate lock in the middle of the quarters. Thankfully, the farmer did not encrypt the code to the lock securely; he encoded it as a postorder traversal of a tree.</p>
+                    <p>&emsp;In your notepad below, you’ve written down an array representation of the tree. The elements start at index one i.e. the root node is at index one. If you can load this representation onto your computer and perform a postorder, you should be able to break through the window and quickly release the gates. Time is ticking - you never know when the next farm patrol will arrive.</p>
+                </div>
+                <div id="objective">
+                    <h3 id="objective-text">Objective: Decode the encrypted gate code tree.</h3>
+                </div>
+                <div id="sources">
+                    <h2>Inputs</h2>
+                    <a href="/rooms/BWI2022/part2/gate-code-tree.txt">gate-code-tree.txt</a>
+                </div>
+                <div class="submit-mod">
+                    <div class="answer-mod">
+                        <input id="answer" type="text" id="answer" name="answer" placeholder="Code">
+                        <a class="button button--medium" onclick="checkAnswer('/rooms/BWI2022/success/')">Try Code</a>
+                    </div>
+                    <p id="error"> </p>
+                </div>
+            </div>
+        </main>
+        <script>includeCommonFooter()</script>
+    </body>
+</html>

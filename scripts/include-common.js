@@ -136,12 +136,17 @@ function includeCommonFooter() {
 
     roomsTitle.appendChild(roomsTitleBold);
 
+    const roomsBWI2022 = document.createElement('a');
+    roomsBWI2022.setAttribute('href', '/rooms/BWI2022/start.html');
+    roomsBWI2022.appendChild(document.createTextNode('Space Cows'));
+
     const roomsBFA2022 = document.createElement('a');
     roomsBFA2022.setAttribute('href', '/rooms/BFA2022/start.html');
     roomsBFA2022.appendChild(document.createTextNode('Bank Heist'));
 
     rooms.appendChild(roomsTitle);
-    rooms.append(roomsBFA2022); 
+    rooms.appendChild(roomsBWI2022);
+    rooms.append(roomsBFA2022);
 
     footerLinksSections.appendChild(rooms);
 
