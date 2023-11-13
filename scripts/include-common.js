@@ -157,8 +157,8 @@ function includeCommonFooter() {
     contactText.append(document.createTextNode('Get in touch or submit suggestions at '));
 
     const contactEmail = document.createElement('a');
-    contactEmail.setAttribute('href', 'mailto:cs.target.acquired@gmail.com');
-    contactEmail.appendChild(document.createTextNode('cs.target.acquired@gmail.com'));
+    contactEmail.setAttribute('href', 'mailto:samdo@cs.stanford.edu');
+    contactEmail.appendChild(document.createTextNode('samdo@cs.stanford.edu'));
 
     contactText.appendChild(contactEmail);
 
