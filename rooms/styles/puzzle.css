@@ -15,7 +15,7 @@ main {
     padding: 5vh 0 5vh 0;
 
     border-radius: 15px;
-    background-color: var(--translucent-black);
+    background-color: var(--module-color);
 
     text-align: left;
 }

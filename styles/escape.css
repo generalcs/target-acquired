@@ -56,12 +56,12 @@
 /* Room-specific backgrounds */
 .rooms__select--BFA2022 {
     background-image:
-    linear-gradient(to right, rgb(0, 0, 0, 1.0), 75%, rgb(0, 0, 0, 0.0)),
+    linear-gradient(to right, rgb(0, 0, 0, 1.0), 60%, rgb(0, 0, 0, 0.0)),
     url('/rooms/BFA2022/images/thumbnail.jpg');
 }
 
 .rooms__select--BWI2022 {
     background-image:
-    linear-gradient(to right, rgb(0, 0, 0, 1.0), 75%, rgb(0, 0, 0, 0.0)),
+    linear-gradient(to right, rgb(0, 0, 0, 1.0), 60%, rgb(0, 0, 0, 0.0)),
     url('/rooms/BWI2022/images/thumbnail.jpg');
 }

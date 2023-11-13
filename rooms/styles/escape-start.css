@@ -11,7 +11,7 @@
 
 .rooms__desc {
     border-radius: var(--border-radius-medium) 0 0 0;
-    background-color: var(--translucent-black);
+    background-color: var(--module-color);
 }
 
 .rooms__outline-route {
@@ -23,7 +23,7 @@
     border-radius: 0 var(--border-radius-medium) 0 0;
 
     border-left: 4px solid black;
-    background-color: var(--translucent-black);
+    background-color: var(--module-color);
 }
 
 .rooms__outline-route--medium {
@@ -53,7 +53,7 @@
     border-radius: 0 0 var(--border-radius-medium) var(--border-radius-medium);
 
     border-top: 4px solid black;
-    background-color: var(--translucent-black);
+    background-color: var(--module-color);
 }
 
 .rooms__instructions--medium {
