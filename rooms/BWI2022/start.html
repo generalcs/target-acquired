@@ -8,7 +8,9 @@
         <link rel="stylesheet" href="/rooms/BWI2022/styles/start.css">
         <link rel="stylesheet" href="/rooms/styles/escape-start.css">
         <link rel="stylesheet" href="/rooms/styles/puzzle.css">
+
         <script src="/rooms/scripts/next-puzzle.js"></script>
+        <script src="/rooms/scripts/timer.js"></script>
     </head>
     <body>
         <script>includeCommonNav()</script>
@@ -67,7 +69,10 @@
                     </div>
 
                     <div class="rooms__enter">
-                        <h4>When you enter, the timer will begin.</h4>
+                        <div>
+                            <h4 id="time-completion-warning"></h4>
+                            <script>conditional_display_str("BWI2022", "time-completion-warning", "Subsequent attempts are not timed.", "When you enter, the timer will begin.")</script>
+                        </div>
                         <div class="submit-mod">
                             <div class="answer-mod">
                                 <input id="answer" type="text" id="answer" name="answer" placeholder="Entry Code">

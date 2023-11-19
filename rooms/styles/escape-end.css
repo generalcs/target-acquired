@@ -33,6 +33,11 @@ main {
     padding: 0.5vh 3% 0.5vh 3%;
 }
 
+.room-end-time--medium {
+    border-top: 4px solid var(--medium-color);
+    border-bottom: 4px solid var(--medium-color);
+}
+
 .room-end-time--hard {
     border-top: 4px solid var(--hard-color);
     border-bottom: 4px solid var(--hard-color);

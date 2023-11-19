@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>Escaped! - Space Cows</title>
+        <script src="/scripts/include-common.js"></script>
+        <script>includeCommonHead()</script>
+        <link rel="stylesheet" href="/rooms/styles/escape-end.css">
+        <link rel="stylesheet" href="/rooms/BWI2022/styles/end.css">
+
+        <script src="/rooms/scripts/timer.js"></script>
+        <script>end_timer("BWI2022")</script>
+    </head>
+    <body>
+        <script>includeCommonNav()</script>
+        <main>
+            <div class="banner">
+                <h1>Escape Room Complete!</h1>
+                <p>&emsp; Cows be free. Nice</p>
+                <div class="room-end-time room-end-time--medium">
+                    <h3>You escaped in</h3>
+                    <p id="room-end-time__value"></p>
+                    <script>display_time("BWI2022", "room-end-time__value")</script>
+                </div>
+                <p>Verify your completion time with your room leader to rank on the leaderboards.</p>
+                <a class="button button--medium" href="/escape.html">Finish</a>
+            </div>
+        </main>
+        <script>includeCommonFooter()</script>
+    </body>
+</html>
