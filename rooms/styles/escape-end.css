@@ -24,13 +24,21 @@ main {
     margin: 0 5vw 0 5vw;
 }
 
-.banner__col_stack {
+.room-end-time {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    margin: 3vh 0 3vh 0;
+    padding: 0.5vh 3% 0.5vh 3%;
 }
 
-#room-end-time {
+.room-end-time--hard {
+    border-top: 4px solid var(--hard-color);
+    border-bottom: 4px solid var(--hard-color);
+}
+
+#room-end-time__value {
     font-family: 'Anonymous Pro', monospace;
     font-size: 70px;
     color: var(--accent-color-2);
