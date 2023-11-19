@@ -20,6 +20,7 @@
 
     --easy-color: var(--accent-color-2);
 
+    --translucent-black-light: rgb(0, 0, 0, 0.60);
     --translucent-black: rgb(0, 0, 0, 0.75);
 
     /* Dimensions */
