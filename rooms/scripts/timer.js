@@ -54,3 +54,8 @@ function conditional_display_time(room_id, element_id) {
         document.getElementById(element_id).style.display = 'none'
     }
 }
+
+function conditional_display_str(room_id, element_id, str_if_complete, str_otherwise) {
+    elem = document.getElementById(element_id)
+    elem.innerText = is_room_complete(room_id) ? str_if_complete : str_otherwise
+}
