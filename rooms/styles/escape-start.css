@@ -10,7 +10,7 @@
 }
 
 .rooms__desc {
-    border-radius: var(--border-radius-medium) 0 0 0;
+    border-radius: var(--border-radius-large) 0 0 0;
     background-color: var(--module-color);
 }
 
@@ -20,9 +20,9 @@
 
     width: 40%;
     padding: 3vh 3vw 3vh 3vw;
-    border-radius: 0 var(--border-radius-medium) 0 0;
+    border-radius: 0 var(--border-radius-large) 0 0;
 
-    border-left: 4px solid black;
+    border-left: 4px solid white;
     background-color: var(--module-color);
 }
 
@@ -50,9 +50,9 @@
 
 .rooms__instructions {
     padding: 3vh 3vw 3vh 3vw;
-    border-radius: 0 0 var(--border-radius-medium) var(--border-radius-medium);
+    border-radius: 0 0 var(--border-radius-large) var(--border-radius-large);
 
-    border-top: 4px solid black;
+    border-top: 4px solid white;
     background-color: var(--module-color);
 }
 
