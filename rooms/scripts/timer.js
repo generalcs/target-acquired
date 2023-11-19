@@ -25,6 +25,12 @@ function end_timer(room_id) {
     }
 }
 
+function is_room_complete(room_id) {
+    let start_time = get_room_time(room_id, true)
+    let end_time = get_room_time(room_id, false)
+    return start_time !== null && end_time !== null
+}
+
 function get_elapsed_time_hhmmss(room_id) {
     let start_time = get_room_time(room_id, true)
     let end_time = get_room_time(room_id, false)
@@ -38,5 +44,13 @@ function get_elapsed_time_hhmmss(room_id) {
 }
 
 function display_time(room_id, element_id) {
-    document.getElementById(element_id).innerText = get_elapsed_time_hhmmss(room_id)
+    document.getElementById(element_id).innerText += get_elapsed_time_hhmmss(room_id)
+}
+
+function conditional_display_time(room_id, element_id) {
+    if (is_room_complete(room_id)) {
+        display_time(room_id, element_id)
+    } else {
+        document.getElementById(element_id).style.display = 'none'
+    }
 }
