@@ -1,11 +1,11 @@
 main {
-    background-image: url('/rooms/BFA2022/images/part4.jpg');
+    background-image: url('/rooms/BFA2022/images/backgrounds/part4.jpg');
     background-position: center;
     background-size: cover;
 }
 
 #objective {
-    background-image: url('/rooms/BFA2022/images/self-destruct.jpg');
+    background-image: url('/rooms/BFA2022/images/objectives/part4.jpg');
     background-position: center;
     background-size: cover;
 }
