@@ -1,11 +1,11 @@
 main {
-    background-image: url('/rooms/BWI2022/images/part2.jpg');
+    background-image: url('/rooms/BWI2022/images/backgrounds/part2.jpg');
     background-position: center;
     background-size: cover;
 }
 
 #objective {
-    background-image: url('/rooms/BWI2022/images/gate-lock.jpg');
+    background-image: url('/rooms/BWI2022/images/objectives/part2.jpg');
     background-position: center;
     background-size: cover;
 }
