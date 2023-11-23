@@ -1,3 +1,7 @@
+:root {
+    --black-gradient: linear-gradient(to right, rgb(0, 0, 0, 1.0), 60%, rgb(0, 0, 0, 0.0));
+}
+
 .rooms {
     display: flex;
     flex-flow: column;
@@ -60,12 +64,18 @@
 /* Room-specific backgrounds */
 .rooms__select--BFA2022 {
     background-image:
-    linear-gradient(to right, rgb(0, 0, 0, 1.0), 60%, rgb(0, 0, 0, 0.0)),
+    var(--black-gradient),
     url('/rooms/BFA2022/images/thumbnail.jpg');
 }
 
 .rooms__select--BWI2022 {
     background-image:
-    linear-gradient(to right, rgb(0, 0, 0, 1.0), 60%, rgb(0, 0, 0, 0.0)),
+    var(--black-gradient),
     url('/rooms/BWI2022/images/thumbnail.jpg');
+}
+
+.rooms__select--BFA2023 {
+    background-image:
+    var(--black-gradient),
+    url('/rooms/BFA2023/images/thumbnail.jpg')
 }
