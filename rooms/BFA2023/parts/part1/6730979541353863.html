@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>Noise Generator - Ran Ran from Durand</title>
+        <script src="/scripts/include-common.js"></script>
+        <script>includeCommonHead()</script>
+        <link rel="stylesheet" href="/rooms/styles/puzzle.css">
+        <link rel="stylesheet" href="/rooms/BFA2023/styles/part1.css">
+        <script src="/rooms/scripts/next-puzzle.js"></script>
+
+        <script src="/rooms/scripts/timer.js"></script>
+        <script>start_timer('BFA2023')</script>
+    </head>
+    <body>
+        <script>includeCommonNav()</script>
+        <main>
+            <div class="puzzle">
+                <h1>Noise Generator</h1>
+                <div>
+                    <p>Slipping quietly down the dark hallway, you make your way to Room 320. Tucked away in this room is an old printer - not particularly remarkable, yet it’s precisely what you need now. You waste no time dismantling the printer upon entering the room. Your project: a noise generator, a clever device to create diversions and mislead the unnerving, zombie-like section leaders.</p>
+                    <p>The small electric motor, once dedicated to guiding the printer head, is perfect for propelling the generator swiftly across hallways and rooms. The speakers, part of the printer’s alert system, can emit a range of random, erratic sounds. Seated amidst the disassembled parts, you begin work quickly - before your presence is betrayed by even the slightest of sounds. Program the generator to follow a sequence of motor controls, emitting a sequence of pitches when stationary.</p>
+                </div>
+                <div id="objective">
+                    <h3 id="objective-text">Objective: Build the noise generator.</h3>
+                </div>
+                <div id="sources">
+                    <h2>Sources</h2>
+                    <a href="/rooms/BFA2023/sources/NoiseGenerator.zip">main.cpp in Noise Generator Environment</a>
+                </div>
+                <div class="submit-mod">
+                    <div class="answer-mod">
+                        <input id="answer" type="text" id="answer" name="answer" placeholder="Code">
+                        <a class="button button--medium" onclick="checkAnswer('/rooms/BFA2023/parts/part2/')">Launch Generator</a>
+                    </div>
+                    <p id="error"> </p>
+                </div>
+            </div>
+        </main>
+        <script>includeCommonFooter()</script>
+    </body>
+</html>

@@ -1,0 +1,15 @@
+main {
+    background-image: url('/rooms/BFA2023/images/backgrounds/part3.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+#objective {
+    background-image: url('/rooms/BFA2023/images/objectives/part3.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.button {
+    color: white;
+}

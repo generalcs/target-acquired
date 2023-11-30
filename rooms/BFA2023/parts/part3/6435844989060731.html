@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>Safe Room - Ran Ran from Durand</title>
+        <script src="/scripts/include-common.js"></script>
+        <script>includeCommonHead()</script>
+        <link rel="stylesheet" href="/rooms/styles/puzzle.css">
+        <link rel="stylesheet" href="/rooms/BFA2023/styles/part3.css">
+        <script src="/rooms/scripts/next-puzzle.js"></script>
+    </head>
+    <body>
+        <script>includeCommonNav()</script>
+        <main>
+            <div class="puzzle">
+                <h1>Safe Room</h1>
+                <div>
+                    <p>You become increasingly unhinged after reciting the 15309 character sequence. In a daze, you stumble away from your section leader and back up the stairs. You hear screaming echoing down the dilapidated corridors of Durand’s third floor. Is it real or are you hallucinating?</p>
+                    <p>“MY BRAIN HURTS — MAKE IT STOP!”</p>
+                    <p>Poor soul. Are they being eaten alive by brain-eating zombies or Assignment 7. Linked Lists? Either way, it’s over for that student. What a terrible way to go.</p>
+                    <p>Creeping around corners, you once again find your way to Room 353 as a last resort. A scene of desperation unfolds: crimson SEGFAULTSs cascade across the screens of six computers, tears tracing down the coders’ cheeks. Surprisingly, there is a cluster of survivors still holding out against their inevitable doom.</p>
+                    <p>They’ve built a linked list system to determine the last safe room on campus, but their list has extraneous nodes that corrupt the result. With little time left before the section leaders approach, they turn to you with eyes of despair. You hop on the nearest monitor and begin coding.</p>
+                </div>
+                <div id="objective">
+                    <h3 id="objective-text">Objective: Locate safe room.</h3>
+                </div>
+                <div id="sources">
+                    <h2>Sources</h2>
+                    <a href="/rooms/BFA2023/sources/SafeRoom.zip">main.cpp in Safe Room Environment</a>
+                </div>
+                <div class="submit-mod">
+                    <div class="answer-mod">
+                        <input id="answer" type="text" id="answer" name="answer" placeholder="Code">
+                        <a class="button button--medium" onclick="checkAnswer('/rooms/BFA2023/parts/end/')">LOCATE</a>
+                    </div>
+                    <p id="error"> </p>
+                </div>
+            </div>
+        </main>
+        <script>includeCommonFooter()</script>
+    </body>
+</html>
