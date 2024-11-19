@@ -54,39 +54,7 @@ function includeCommonHead() {
 
 function includeCommonNav() {
     const nav = document.createElement('nav');
-
-    const navLinks = document.createElement('div');
-    navLinks.setAttribute('class', 'nav__links');
-    
-    const escapeLink = document.createElement('a');
-    escapeLink.setAttribute('href', '/escape.html');
-    escapeLink.appendChild(document.createTextNode('Escape'));
-
-    const teamsLink = document.createElement('a');
-    teamsLink.setAttribute('href', '/teams.html');
-    teamsLink.appendChild(document.createTextNode('Teams'));
-
-    navLinks.appendChild(escapeLink);
-    navLinks.appendChild(teamsLink);
-
-    nav.appendChild(navLinks);
     nav.appendChild(getTitleLink());
-
-    const navLinks2 = document.createElement('div');
-    navLinks2.setAttribute('class', 'nav__links');
-
-    const rankingsLink = document.createElement('a');
-    rankingsLink.setAttribute('href', '/rankings.html');
-    rankingsLink.appendChild(document.createTextNode('Rankings'));
-
-    const solutionsLink = document.createElement('a');
-    solutionsLink.setAttribute('href', '/solutions.html');
-    solutionsLink.appendChild(document.createTextNode('Solutions'));
-
-    navLinks2.appendChild(rankingsLink);
-    navLinks2.appendChild(solutionsLink);
-
-    nav.appendChild(navLinks2);
 
     const body = document.getElementsByTagName('body').item(0);
     body.prepend(nav);
