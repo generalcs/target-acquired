@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>Keepers of the Grove</title>
+        <script src="/scripts/include-common.js"></script>
+        <script>includeCommonHead()</script>
+        <link rel="stylesheet" href="/styles/escape.css">
+        <link rel="stylesheet" href="/rooms/BFA2024/styles/start.css">
+        <link rel="stylesheet" href="/rooms/styles/escape-start.css">
+        <link rel="stylesheet" href="/rooms/styles/puzzle.css">
+
+        <script src="/rooms/scripts/next-puzzle.js"></script>
+        <script src="/rooms/scripts/timer.js"></script>
+    </head>
+    <body>
+        <script>includeCommonNav()</script>
+        <main>
+            <div class="rooms__room">
+                <div class="rooms__outline">
+                    <div class="rooms__desc">
+                        <h2>Keepers of the Grove</h2>
+                        <div class="rooms__difficulty">
+                            <h4>Difficulty: <span class="hard">Hard</span></h4>
+                            <div class="rooms__difficulty-images">
+                                <img src="/images/hard-target.png">
+                                <img src="/images/hard-target.png">
+                                <img src="/images/hard-target.png">
+                                <img src="/images/hard-target.png">
+                            </div>
+                        </div>
+                        <h4>CS106B Fall 24-25 | Trees</h4>
+                        <p>Snowflakes descend from the sky, melting into droplets as they land on your face. The silence of a winter night envelops you as you gaze towards the stars. You stand still, yearning to be entranced by your senses. A night like this calms the soul, and carries the wish of a cozy spot next to the crackling firewood at home. But this night doesn’t bring any peace or wishes to mind. Its silence is deathly quiet, and it clutches at your throat. As you look down from the sky, you open your mouth to say anything, anything at all. No sound comes out. Before your eyes, the frost claws at the last peaks of the world.</p>
+                    </div>
+                    <div class="rooms__outline-route rooms__outline-route--hard">
+                        <h2>Escape Route</h2>
+                        <div class="rooms__outline-route-list">
+                            <span>
+                                <img src="/rooms/images/route-icons/teams.png">
+                                <h4>Teams of 2 to 3</h4>
+                            </span>
+                            <span>
+                                <img src="/rooms/images/route-icons/increasing-difficulty.png">
+                                <h4>Increasing difficulty</h4>
+                            </span>
+                            <span>
+                                <img src="/rooms/images/route-icons/algorithmic-thinking.png">
+                                <h4>Algorithmic thinking</h4>
+                            </span>
+                            <span>
+                                <img src="/rooms/images/route-icons/lateral-thinking.png">
+                                <h4>Lateral thinking</h4>
+                            </span>
+                            <span>
+                                <img src="/rooms/images/route-icons/coding-required.png">
+                                <h4>Coding required</h4>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="rooms__instructions rooms__instructions--hard">
+                    <h2>Instructions</h2>
+                    <p>Each part will give you a puzzle that leads to a code. Use the code in the answer box to proceed.</p>
+                    <div class="rooms__instruction-item">
+                        <p>No link: Use the answer to the puzzle as the code.</p>
+                    </div>
+                    <div class="rooms__instruction-item">
+                        <img src="/rooms/images/virtual-link.png">
+                        <p>Virtual world link: Use the answer to the puzzle to find the code online.</p>
+                    </div>
+                    <div class="rooms__instruction-item">
+                        <img src="/rooms/images/physical-link.png"> 
+                        <p>Physical world link: Use the answer to the puzzle to find the code in the real-world room.</p>
+                    </div>
+
+                    <div class="rooms__enter">
+                        <div>
+                            <h4 id="time-completion-warning"></h4>
+                            <script>conditional_display_str("BFA2024", "time-completion-warning", "Subsequent attempts are not timed.", "When you enter, the timer will begin.")</script>
+                        </div>
+                        <div class="submit-mod">
+                            <div class="answer-mod">
+                                <input id="answer" type="text" id="answer" name="answer" placeholder="Entry Code">
+                                <a class="button button--hard" onclick="checkAnswer('/rooms/BFA2024/part1/')">Enter Room</a>
+                            </div>
+                            <p id="error"> </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script>includeCommonFooter()</script>
+    </body>
+</html>
