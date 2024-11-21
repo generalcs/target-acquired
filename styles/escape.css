@@ -79,3 +79,9 @@
     var(--black-gradient),
     url('/rooms/BFA2023/images/thumbnail.jpg')
 }
+
+.rooms__select--BFA2024 {
+    background-image:
+    var(--black-gradient),
+    url('/rooms/BFA2024/images/thumbnail.jpg')
+}
