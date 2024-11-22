@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>The Gates of Equivalence - Keepers of the Grove</title>
+        <script src="/scripts/include-common.js"></script>
+        <script>includeCommonHead()</script>
+        <link rel="stylesheet" href="/rooms/styles/puzzle.css">
+        <link rel="stylesheet" href="/rooms/BFA2024/styles/part1.css">
+        <script src="/rooms/scripts/next-puzzle.js"></script>
+
+        <script src="/rooms/scripts/timer.js"></script>
+        <script>start_timer('BFA2024')</script>
+    </head>
+    <body>
+        <script>includeCommonNav()</script>
+        <main>
+            <div class="puzzle">
+                <h1>The Gates of Equivalence</h1>
+                <div>
+                    <p>The Grove trembles under the weight of its decay, and a low hum reverberates through the air. As you walk further into the icy expanse, you come across a pair of towering, arched gates. These are the Gates of Equivalence, a trial imposed by the Keepers to protect the center of the Grove. Ancient runes glow faintly along their frame, and their surface gleams with a molten brilliance, like iron just pulled from a forge. Yet, frost clings stubbornly to their edges. To stand in their presence is to feel the weight of their ancient duty, their silent expectation for you to prove yourself worthy of passing through.</p>
+                    <p>As you approach, the gates begin to stir. Two spectral projections materialize before you—trees, their branches sprawling like veins across a starless void. At first glance, the two seem identical, their roots mirroring one another in an intricate dance. But the gates speak, their voices like grinding stone: "One lies; one is truth. Are they one, or are they two?" You realize the test before you. To unlock the gates and proceed deeper into the Grove, you must determine whether the two trees are truly the same in structure or if their symmetry is but a trick of the light. If you fail, the gates will seal and you will be forced to leave.</p>
+                </div>
+                <div id="objective">
+                    <h3 id="objective-text">Objective: Answer the Gates.</h3>
+                </div>
+                <div id="sources">
+                    <h2>Sources</h2>
+                    <a href="/rooms/BFA2024/sources/KeepersOfTheGrove.zip">main.cpp in Keepers of the Grove Environment</a>
+                </div>
+                <div class="submit-mod">
+                    <div class="answer-mod">
+                        <input id="answer" type="text" id="answer" name="answer" placeholder="Code">
+                        <a class="button button--hard" onclick="checkAnswer('/rooms/BFA2024/parts/part2/')">Answer</a>
+                    </div>
+                    <p id="error"> </p>
+                </div>
+            </div>
+        </main>
+        <script>includeCommonFooter()</script>
+    </body>
+</html>
