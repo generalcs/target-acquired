@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>Network - Bank Heist</title>
+        <script src="/scripts/include-common.js"></script>
+        <script>includeCommonHead()</script>
+        <link rel="stylesheet" href="/rooms/styles/puzzle.css">
+        <link rel="stylesheet" href="/rooms/BFA2022/styles/part2.css">
+        <script src="/rooms/scripts/next-puzzle.js"></script>
+    </head>
+    <body>
+        <script>includeCommonNav()</script>
+        <main>
+            <div class="puzzle">
+                <h1>Infiltrating the Network</h1>
+                <div>
+                    <p>&emsp;With the login to the network and a sigh of relief after departing with Fred’s code, your team buckles down to go digital. You enter the password, and see a map of all the nodes on the network by using a custom ping command on your terminal. However, the node that you are logged into starts acting shifty seconds later. The ping command stops working and you briefly receive the messages: YOU WILL NEVER CATCH US. YOU WILL NEVER CATCH US. YOU WILL NEVER CATCH US. The hackers have left a sign off on each of the nodes by injecting a pipeline to the connection infrastructure.</p>
+                    <p>&emsp;After careful inspection, one of your partners finds that the code pipeline modifies the data that is sent by each node and obscures the original information. But you also know that the hackers wouldn't have access to the network if this was always the case - they must have some deactivation mechanism to shut down the pipeline. Your team will have to dig into the node source code to find the deactivation code.</p>
+                </div>
+                <div id="objective">
+                    <h3 id="objective-text">Objective: Get a deactivation code from the source.</h3>
+                </div>
+                <div id="sources">
+                    <h2>Sources</h2>
+                    <a href="/rooms/BFA2022/sources/NetworkInvestigation.zip">main.cpp in Network Investigation Environment</a>
+                </div>
+                <div class="submit-mod">
+                    <div class="answer-mod">
+                        <img src="/rooms/images/virtual-link.png">
+                        <input id="answer" type="text" id="answer" name="answer" placeholder="Code">
+                        <a class="button button--hard" onclick="checkAnswer('/rooms/BFA2022/part3/')">Submit Code</a>
+                    </div>
+                    <p id="error"> </p>
+                </div>
+            </div>
+        </main>
+        <script>includeCommonFooter()</script>
+    </body>
+</html>
