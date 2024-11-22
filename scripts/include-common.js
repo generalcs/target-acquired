@@ -104,6 +104,10 @@ function includeCommonFooter() {
 
     roomsTitle.appendChild(roomsTitleBold);
 
+    const roomsBFA2024 = document.createElement('a');
+    roomsBFA2024.setAttribute('href', '/rooms/BFA2024/start.html');
+    roomsBFA2024.appendChild(document.createTextNode('Keepers of the Grove'));
+
     const roomsBFA2023 = document.createElement('a');
     roomsBFA2023.setAttribute('href', '/rooms/BFA2023/start.html');
     roomsBFA2023.appendChild(document.createTextNode('Ran Ran from Durand'))
@@ -117,6 +121,7 @@ function includeCommonFooter() {
     roomsBFA2022.appendChild(document.createTextNode('Bank Heist'));
 
     rooms.appendChild(roomsTitle);
+    rooms.appendChild(roomsBFA2024);
     rooms.appendChild(roomsBFA2023)
     rooms.appendChild(roomsBWI2022);
     rooms.append(roomsBFA2022);
