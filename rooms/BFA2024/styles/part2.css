@@ -1,0 +1,11 @@
+main {
+    background-image: url('/rooms/BFA2024/images/backgrounds/part2.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+#objective {
+    background-image: url('/rooms/BFA2024/images/objectives/part2.jpg');
+    background-position: center;
+    background-size: cover;
+}
